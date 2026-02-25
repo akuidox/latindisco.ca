@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DJ Nom | Contact & Réseaux</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            background: radial-gradient(circle at top, #1a0b0b 0%, #050505 100%);
+            color: white; 
+            font-family: 'Montserrat', sans-serif;
+            min-height: 100vh;
+        }
+        .latin-gradient {
+            background: linear-gradient(90deg, #f59e0b, #ef4444);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .link-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(245, 158, 11, 0.2);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(10px);
+        }
+        .link-card:hover {
+            transform: scale(1.02);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #f59e0b;
+            box-shadow: 0 0 20px rgba(245, 158, 11, 0.3);
+        }
+        .pulse {
+            animation: pulse-animation 2s infinite;
+        }
+        @keyframes pulse-animation {
+            0% { box-shadow: 0 0 0 0px rgba(239, 68, 68, 0.4); }
+            100% { box-shadow: 0 0 0 20px rgba(239, 68, 68, 0); }
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center py-12 px-6">
+
+    <div class="w-24 h-24 rounded-full border-4 border-orange-500 mb-4 overflow-hidden shadow-xl">
+        <img src="https://scontent-yyz1-1.xx.fbcdn.net/v/t39.30808-6/638353254_1478464476945785_4627612649309333278_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=1uNrDFpGeJEQ7kNvwHbR7-2&_nc_oc=AdlxcGE_x0nXQXtp9fm6qdvWkSiFWUhux8UWBUKXEuD80jk-bNX8vyG7LdZvzY5tyN8&_nc_zt=23&_nc_ht=scontent-yyz1-1.xx&_nc_gid=ZkbFQYgb8ivfYIgXzssFOQ&oh=00_AfthvK82OW256WFktERaLKPjIuLzDSyzdxC-n2tMbxFG7w&oe=69A5120D" alt="DJ Nom" class="w-full h-full object-cover">
+    </div>
+
+    <h1 class="text-2xl font-900 uppercase italic mb-1">DJ <span class="latin-gradient">EL PANA</span></h1>
+    <p class="text-gray-400 text-sm tracking-widest uppercase mb-8 text-center">Musique Latine & Événements</p>
+
+    <div class="w-full max-w-md space-y-4">
+        
+        <a href="mailto:rogelin.dj@gmail.com" class="link-card pulse flex items-center justify-center p-5 rounded-2xl font-bold uppercase tracking-wider bg-gradient-to-r from-orange-500 to-red-600 border-none">
+            🔥 Réserver une date
+        </a>
+
+        <a href="https://www.instagram.com/dj_rogelin" target="_blank" class="link-card flex items-center p-4 rounded-2xl group">
+            <span class="text-2xl mr-4">📸</span>
+            <span class="flex-grow font-bold uppercase tracking-tight">Instagram</span>
+            <span class="text-gray-500 group-hover:text-orange-500">→</span>
+        </a>
+
+        <a href="https://www.facebook.com/rogelio.suarez.269058" target="_blank" class="link-card flex items-center p-4 rounded-2xl group">
+            <span class="text-2xl mr-4">🔵</span>
+            <span class="flex-grow font-bold uppercase tracking-tight">Facebook</span>
+            <span class="text-gray-500 group-hover:text-orange-500">→</span>
+        </a>
+
+        <a href="tel:+15140000000" class="link-card flex items-center p-4 rounded-2xl group">
+            <span class="text-2xl mr-4">📱</span>
+            <span class="flex-grow font-bold uppercase tracking-tight">Appeler / WhatsApp</span>
+            <span class="text-gray-500 group-hover:text-orange-500">→</span>
+        </a>
+
+        <a href="#" target="_blank" class="link-card flex items-center p-4 rounded-2xl group">
+            <span class="text-2xl mr-4">🎵</span>
+            <span class="flex-grow font-bold uppercase tracking-tight">Écouter mes Mixes</span>
+            <span class="text-gray-500 group-hover:text-orange-500">→</span>
+        </a>
+
+    </div>
+
+    <footer class="mt-12 text-zinc-600 text-[10px] uppercase tracking-widest">
+        Sabor y Ritmo &copy; 2026
+    </footer>
+
+</body>
+</html>
